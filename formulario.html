@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulario.css">
+   <script src="js/codigo javascript.js"></script>
+   <link rel="sheetstyle" href="css/formulario.css">
+</head>
+<body>
+    <div class="bane"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="formulario.html">Home</li>
+                <li><a href="#pedidos">pedidos</a></li>
+                <li><a href="">produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="secao1">
+        <article>
+            <div class="imagem">
+                <img src="img/img1.jpg" alt="cafe">
+                <img src="img/img2.jpg" alt="cafe">
+                <img src="img/img3.jpg" alt="cafe">
+                <img src="img/img4.jpg" alt="cafe">
+            </div>
+        </article>
+    </section>
+    <section class="secao2">
+        <article>
+            <a name="pedidos"></a>
+            <br><br>
+            <h1>Pedidos</h1>
+            <br>
+            <form>
+                <fieldset>
+            <div class="formulario">
+
+           
+                <label for="nome">nome:</label>
+                <input type="text" id="nome" placeholder="nome do cliente" autofocus required="required">
+                <input type="text" id="mesa" placeholder="número da mesa">
+               <div id="envia">Enviar</div>
+                <br><br>
+                <label for="bebidas_fria">bebidas frias:</label>
+                <select id="bebidas_fria">
+                    <option value="0">cola-colar</option>
+                    <option value="1">fanta uva</option>
+                    <option value="2">sprits</option>
+                    <option value="3">energético</option>
+                    <option value="4">gatorade</option>
+                    <option value="5">água com gás</option>
+                    <option value="6">água sem gás</option>
+                </select>
+                <label for="quantidade">quantidade do produto:</label>
+                <input type="number" id="quantidade_fria" value="0" min="0" minlength="0">
+                <label>preço:</label>
+                <input type="text" disabled value="0" id="preco_bebidas_frias"> R$
+                <br><br>
+                <label for="bebidas_quente">bebidas quente:</label>
+                <select id="bebidas_quente">
+                    <option value="0">Café</option>
+                    <option value="1">Cappuccino</option>
+                    <option value="2">café com leite</option>
+                    <option value="3">achocolatado</option>
+                    <option value="4">café expressor</option>
+                    <option value="5">Café extra forte</option>
+                    <option value="6">Mate leão</option>
+                </select>
+                <label for="quantidade">quantidade do produto:</label>
+                <input type="number" id="quantidade_Bebida_quente" value="0"  min="0" minlength="0">
+                <label>preço:</label>
+                <input type="text" disabled value="0" id="preco_bebidas_quente"> R$
+                <br><br>
+                <label for="salgado">Salgado:</label>
+                <select id="salgado">
+                    <option value="0">torta de atum</option>
+                    <option value="1">pizza</option>
+                    <option value="2">esfiha de frango</option>
+                    <option value="3">Empada de camarrão</option>
+                    <option value="4">pastel de frango com cartupiri</option>
+                    <option value="5">misto quente</option>
+                    <option value="6">coxinha</option>
+                </select>
+                <label for="quantidade">quantidade do produto:</label>
+                <input type="number" id="quantidade_salgado" value="0"  min="0" minlength="0">
+                <label>preço:</label>
+                <input type="text" disabled value="0" id="preco_salgado"> R$
+                <br><br>
+                <label for="doce">Doce:</label>
+                <select id="doce">
+                    <option value="0">torta de maracujá</option>
+                    <option value="1">bolo de cenoura com corbetura de chocolate</option>
+                    <option value="2">doce de mamão verde</option>
+                    <option value="3">pudim de leite ninho com nutella</option>
+                    <option value="4">doce de cocô</option>
+                    <option value="5">goiabada com queixo</option>
+                    <option value="6">bolo de fubá</option>
+                </select>
+                <label for="quantidade">quantidade do produto:</label>
+                <input type="number" id="quantidade_doce" value="0" min="0" minlength="0">
+                <label>preço:</label>
+                <input type="text" disabled value="0" id="preco_doce"> R$
+            </div>
+            </fieldset>
+<br>
+          <h1>total:</h1><br>
+                <textarea id="total0" disabled></textarea><br>
+                <textarea id="total1" disabled></textarea><br>
+                <textarea id="total2" disabled></textarea><br>
+                <textarea id="total3" disabled></textarea><br>
+                <textarea id="total4" disabled></textarea><br>
+                <textarea id="total5" disabled></textarea><br>
+                <div class="formulario2">
+                <h1>pesquisa rápida sobre nosso atendimento</h1>
+              
+                <input type="radio" id="manha" name="turno" value="manha">
+                <label for="manha">você vem aqui de manhã</label><br>
+
+                
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">você vem aqui de tarde</label><br>
+
+                <input type="radio" id="noite"  name="turno" value="noite">
+                <label for="noite">você vem aqui de noite</label><br>
+               
+            
+                <br>
+                <input type="checkbox" id="bebidas" name="pesquisa" value="bebidas">
+                <label for="bebidas">você gosta mais de bebidas</label><br>
+                
+                <input type="checkbox" id="salgado2" name="pesquisa" value="salgado">
+                <label for="salgado2">você gosta mais de salgado</label><br>
+                
+                <input type="checkbox" id="doces" name="pesquisa" value="doces">
+                <label for="doces">você gosta mais de doces</label><br><br>
+
+                <label for="cor">nivel de satisfação aonde vermelho é ruim e verde é bom:</label><br><br>
+                <input type="color" id="cor" name="cor" value="#ff0000">
+                <input type="submit" value="enviar">
+                <br><br>
+                <label for="tempo">por favor coloque a data e hora abaixo:</label>
+                <br>
+                <input type="date" id="tempo">
+                <input type="time">    <br>
+                <label>qual que reclamação ou critica construtiva pode deixa uma mensagem de texto abaixo:</label>
+               <br> <textarea>
+
+                </textarea>
+            </div>
+                <p>obrigado volte sempre</p>
+            </form>
+
+        </article>
+    </section>
+</body>
+</html>
